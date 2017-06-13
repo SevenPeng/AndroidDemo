@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seven.androidfirstbookalldemo">
+
+    <!-- C2 获取拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- C5 获取网络连接管理权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- C5 注册成开机广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- C7 获取联系人列表权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- C8 获取访问SD卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- C9 获取访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- C8 用于拍照照片,并将其返回 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.seven.androidfirstbookalldemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter> <!-- 设置主活动标签 -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".c2.C2FristActivity"
+            android:label="First Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".c2.C2SecondActivity"
+            android:label="SecondActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.example.activity.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".c2.C2NormalActivity"
+            android:label="NormalActivity" />
+        <activity
+            android:name=".c2.C2DialogActivity"
+            android:label="DialogActivity"
+            android:theme="@android:style/Theme.Dialog"> <!-- - 对话框形式 -->
+        </activity>
+        <activity android:name=".c2.C2ThirdActivity" />
+        <activity android:name=".c2.C2BaseActivity" />
+        <activity android:name=".c2.C2MainActivity" />
+        <activity android:name=".c3.C3MainActivity" />
+        <activity android:name=".c3.C3UIWidgestTestActivity" />
+        <activity android:name=".c3.C3LayoutActivity" />
+        <activity android:name=".c3.C3ViewActivity" />
+        <activity android:name=".c3.C3ListViewActivity" />
+        <activity android:name=".c3.C3RecyclerViewActivity" />
+        <activity android:name=".c4.C4MainActivity" />
+        <activity android:name=".c4.C4Main2Activity" />
+        <activity android:name=".c4_news.NewsContentActivity" />
+        <activity
+            android:name=".c5.C5MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".c5.C5BroadcastActivity" />
+        <activity android:name=".c5.LoginActivity" />
+
+        <receiver
+            android:name=".c5.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- 静态方法注册广播. -->
+            <intent-filter>
+
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".c5.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- 静态方法注册广播. -->
+            <intent-filter>
+
+                <!-- 自定义标准广播 -->
+                <action android:name="com.example.seven.androidfirstbookalldemo.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".c5.AnotherBroadcastReceive"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100"> <!-- 保证第一个接收到 -->
+                <!-- 注册在其他应用程序也能收到广播 -->
+                <action android:name="com.example.seven.androidfirstbookalldemo.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".c6.C6MainActivity" />
+        <activity android:name=".c6.FilePersistenceActivity" />
+        <activity android:name=".c6.SharedPreferencesActivity" />
+        <activity android:name=".c6.DatabaseActivity" />
+        <activity android:name=".c6.LitePalActivity" />
+        <activity android:name=".c7.C7MainActivity" />
+        <activity android:name=".c8.C8MainActivity" />
+        <activity android:name=".c8.NotificationActivity" />
+        <activity android:name=".c8.NotificationActionActivity" />
+        <activity android:name=".c8.CameraAlbumActivity" />
+        <activity android:name=".c9.C9MainActivity" />
+        <activity android:name=".c9.WebViewActivity" />
+        <activity android:name=".c9.NetworkActivity" />
+        <activity android:name=".C10.C10MainActivity" />
+        <activity android:name=".C10.ThreadTestActivity" />
+
+        <service
+            android:name=".C10.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".C10.MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".C10.ServicePracticeActivity" />
+        <activity android:name=".C12.C12MainActivity"
+            android:label="Fruit"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_c3_layout"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.seven.androidfirstbookalldemo.c3.C3LayoutActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/C3_button_Lin1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:text="LinHor"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_button_Lin2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="LinHor"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_button_Lin3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:text="LinHor"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/C3_button_Lin4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="LinVer"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_button_Lin5"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="LinVer"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_button_Lin6"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="LinVer"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/C3_layout_editxt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="Type something" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_send"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Send"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="ReaLay1"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="ReaLay2"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="ReaLay3"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="ReaLay4"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay5"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="ReaLay5"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay6"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay7"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/C3_layout_btn_relLay6"
+            android:layout_toLeftOf="@+id/C3_layout_btn_relLay6" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay8"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/C3_layout_btn_relLay6"
+            android:layout_toRightOf="@+id/C3_layout_btn_relLay6" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay9"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/C3_layout_btn_relLay6"
+            android:layout_toLeftOf="@+id/C3_layout_btn_relLay6" />
+
+        <Button
+            android:id="@+id/C3_layout_btn_relLay10"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/C3_layout_btn_relLay6"
+            android:layout_toRightOf="@+id/C3_layout_btn_relLay6" />
+    </RelativeLayout>
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </android.support.percent.PercentFrameLayout>
+</LinearLayout>

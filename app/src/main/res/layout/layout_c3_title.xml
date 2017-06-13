@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_dark">
+    <Button
+        android:id="@+id/C3_title_btn_titBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Back"
+        android:textColor="@android:color/holo_green_light"
+        android:background="@android:color/holo_blue_bright" />
+    <TextView
+        android:id="@+id/C3_title_txtview_titTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Title Text"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/C3_title_btn_titEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Edit"
+        android:textColor="#fff"
+        android:background="@android:color/holo_blue_bright" />
+
+</LinearLayout>

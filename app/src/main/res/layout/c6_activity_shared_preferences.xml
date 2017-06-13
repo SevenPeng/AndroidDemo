@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c6_activity_shared_preferences"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.seven.androidfirstbookalldemo.c6.SharedPreferencesActivity">
+
+    <Button
+        android:id="@+id/c6_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save data"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/c6_btn_restore_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restore data"
+        android:textAllCaps="false"
+        android:layout_below="@+id/c6_btn_save"
+        />
+
+</LinearLayout>

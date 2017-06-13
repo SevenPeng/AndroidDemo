@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/c4_news_visibility_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/c4_news_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp">
+            <!--新闻标题-->
+        </TextView>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000">
+            <!--分割细线-->
+        </view>
+
+        <TextView
+            android:id="@+id/c4_news_news_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:textSize="18sp" >
+            <!--新闻正文-->
+        </TextView>
+    </LinearLayout>
+
+    <view
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#000">
+        <!--分割细线-->
+    </view>
+</RelativeLayout>

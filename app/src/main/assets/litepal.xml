@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="BookStore2"></dbname>
+
+    <version value="2"></version>
+
+    <list>
+        <mapping class = "com.example.seven.androidfirstbookalldemo.c6.Book"></mapping>
+        <mapping class="com.example.seven.androidfirstbookalldemo.c6.Category"></mapping>
+    </list>
+</litepal>
